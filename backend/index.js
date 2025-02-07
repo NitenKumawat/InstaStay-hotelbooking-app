@@ -13,14 +13,30 @@ const app = express();
 // Load environment variables from .env file
 dotenv.config();
 
+// Allow requests from both localhost (development) and Vercel frontend (production)
+const allowedOrigins = [
+  "http://localhost:5173",  // Development (Vite)
+  "http://localhost:5174",  // Development (Vite)
+  "https://insta-stay-hotelbooking-app.vercel.app"  // Production (Vercel)
+];
+
+
 // Middleware
 app.use(express.json()); // Parse JSON request body
 app.use(cookieParser()); // To read cookies sent by the client
-app.use(cors({ origin: "http://localhost:5173", credentials: true })); // Allow CORS (with credentials for cookies)
 
 
 
-
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
 
 // Import routes
 const authRoutes = require("./routes/authRoutes");
