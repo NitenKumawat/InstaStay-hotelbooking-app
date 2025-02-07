@@ -1,0 +1,127 @@
+[{
+  "_id": {
+    "$oid": "67937b0a1718eb1656cd2c07"
+  },
+  "userId": {
+    "$oid": "678f7979e92a0134dfc79668"
+  },
+  "hotelId": {
+    "$oid": "6791ec1f70c2988c26cf6289"
+  },
+  "roomType": "Single",
+  "checkInDate": {
+    "$date": "2025-01-24T00:00:00.000Z"
+  },
+  "checkOutDate": {
+    "$date": "2025-01-29T00:00:00.000Z"
+  },
+  "guests": 1,
+  "specialRequests": "",
+  "numberOfRooms": 1,
+  "totalPrice": 50000,
+  "bookingDate": {
+    "$date": "2025-01-11T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-24T11:35:38.907Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-25T09:02:56.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67937cfb76a4c90c3b8d2887"
+  },
+  "userId": {
+    "$oid": "678f7979e92a0134dfc79668"
+  },
+  "hotelId": {
+    "$oid": "6791ec1f70c2988c26cf6289"
+  },
+  "roomType": "Single",
+  "checkInDate": {
+    "$date": "2025-01-25T00:00:00.000Z"
+  },
+  "checkOutDate": {
+    "$date": "2025-01-30T00:00:00.000Z"
+  },
+  "guests": 1,
+  "specialRequests": "",
+  "numberOfRooms": 1,
+  "totalPrice": 50000,
+  "bookingDate": {
+    "$date": "2025-01-24T11:43:55.208Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-24T11:43:55.227Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-24T11:43:55.227Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67948972ae51c06d89ad9b62"
+  },
+  "userId": {
+    "$oid": "678f7979e92a0134dfc79668"
+  },
+  "hotelId": {
+    "$oid": "6791ec0c70c2988c26cf6286"
+  },
+  "roomType": "Suite",
+  "checkInDate": {
+    "$date": "2025-02-01T00:00:00.000Z"
+  },
+  "checkOutDate": {
+    "$date": "2025-02-05T00:00:00.000Z"
+  },
+  "guests": 2,
+  "numberOfRooms": 1,
+  "totalPrice": 500,
+  "bookingDate": {
+    "$date": "2025-01-25T06:49:22.724Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-25T06:49:22.726Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-25T06:49:22.726Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67967ed8c5e2764e6c34f49f"
+  },
+  "userId": {
+    "$oid": "678fc8cdccead5333b039863"
+  },
+  "hotelId": {
+    "$oid": "6791ec1f70c2988c26cf6289"
+  },
+  "roomType": "Double",
+  "checkInDate": {
+    "$date": "2025-01-27T00:00:00.000Z"
+  },
+  "checkOutDate": {
+    "$date": "2025-01-28T00:00:00.000Z"
+  },
+  "guests": 1,
+  "specialRequests": "",
+  "numberOfRooms": 1,
+  "totalPrice": 200,
+  "bookingDate": {
+    "$date": "2025-01-26T18:28:40.816Z"
+  },
+  "createdAt": {
+    "$date": "2025-01-26T18:28:40.843Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T18:28:40.843Z"
+  },
+  "__v": 0
+}]

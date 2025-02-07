@@ -1,0 +1,410 @@
+[{
+  "_id": {
+    "$oid": "6791ec0c70c2988c26cf6286"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "Hotel Sunshine Updated",
+  "address": "21 Beach Ave, Miami, FL",
+  "photos": [
+    "photo1737652988961.jpg",
+    "photo1737653009370.jpg",
+    "photo1737652998922.jpg"
+  ],
+  "description": "An updated description for a beautiful beachside hotel.",
+  "amenities": [
+    "Wi-Fi",
+    "Pool",
+    "Gym",
+    "tv",
+    "radio"
+  ],
+  "extraInfo": "Free breakfast included.",
+  "checkIn": 15,
+  "checkOut": 12,
+  "maxGuests": 4,
+  "pricePerNight": 2000,
+  "totalRooms": 50,
+  "availableRooms": 50,
+  "createdAt": {
+    "$date": "2025-01-23T07:13:17.015Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-27T08:37:53.736Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6791ec1f70c2988c26cf6289"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "Hotel Taj",
+  "address": "56 Mountain Rd, Denver, CO",
+  "photos": [
+    "photo1737653543679.jpg",
+    "photo1737653532525.jpg"
+  ],
+  "description": "A serene mountain retreat perfect for nature lovers.",
+  "amenities": [
+    "Free WiFi",
+    "Spa",
+    "Restaurant"
+  ],
+  "extraInfo": "Complimentary yoga classes every morning.",
+  "checkIn": 15,
+  "checkOut": 12,
+  "maxGuests": 2,
+  "pricePerNight": 200,
+  "totalRooms": 23,
+  "availableRooms": 4,
+  "createdAt": {
+    "$date": "2025-01-23T07:13:35.373Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T18:42:30.095Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6791ec3270c2988c26cf628c"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "Ocean View Hotel",
+  "address": "123 Beach Ave, Malibu, CA",
+  "photos": [
+    "photo1737653587107.jpg",
+    "photo1737653568135.jpg"
+  ],
+  "description": "A luxurious seaside hotel with ocean views.",
+  "amenities": [
+    "Free WiFi",
+    "Swimming Pool",
+    "Gym"
+  ],
+  "extraInfo": "Breakfast included",
+  "checkIn": 14,
+  "checkOut": 11,
+  "maxGuests": 4,
+  "pricePerNight": 1600,
+  "totalRooms": 50,
+  "availableRooms": 46,
+  "createdAt": {
+    "$date": "2025-01-23T07:13:54.792Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T11:56:31.683Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67927a364d8493a11d80c135"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "Whispering Lake Villa 01 Udaipur",
+  "address": "Farm stay in Udaipur, India",
+  "photos": [
+    "ce335cf706847192bb08f75797c9d817.jpg",
+    "photo1737652737742.jpg",
+    "photo1737652741724.jpg",
+    "photo1737711080603.jpg",
+    "photo1737711091927.jpg",
+    "photo1737711143014.jpg",
+    "photo1737711155315.jpg"
+  ],
+  "description": "Recognized as the Best HomeStay in India 2024, this Villa is a modern architectural masterpiece boasting stylish design, luxurious amenities (including high-speed Wi-Fi), and breathtaking lake views from its stunning infinity pool and deck.",
+  "amenities": [
+    "parking",
+    "tv"
+  ],
+  "extraInfo": "Your Private Lakeside Retreat: 2BR Villa with Infinity Pool & Panoramic Views\n",
+  "checkIn": 15,
+  "checkOut": 12,
+  "maxGuests": 1,
+  "pricePerNight": 4999,
+  "totalRooms": 63,
+  "availableRooms": 0,
+  "createdAt": {
+    "$date": "2025-01-23T17:19:50.160Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T19:29:50.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679487ffae51c06d89ad9b55"
+  },
+  "owner": {
+    "$oid": "678f7979e92a0134dfc79668"
+  },
+  "name": "Luxury Hotel",
+  "address": "123 Street, City, Country",
+  "photos": [
+    "photo1737811224365.jpg"
+  ],
+  "description": "A luxurious hotel with premium amenities.",
+  "amenities": [
+    "Free WiFi",
+    "Swimming Pool",
+    "Gym"
+  ],
+  "extraInfo": "Breakfast included",
+  "checkIn": 14,
+  "checkOut": 11,
+  "maxGuests": 200,
+  "pricePerNight": 150,
+  "totalRooms": 100,
+  "availableRooms": 80,
+  "createdAt": {
+    "$date": "2025-01-25T06:43:11.790Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-25T13:20:27.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6794dc7ebd42404bad8cc392"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "raj mahal",
+  "address": "jaipur",
+  "photos": [
+    "photo1737808934841.jpg"
+  ],
+  "description": "a good place for indians",
+  "amenities": [
+    "wifi"
+  ],
+  "extraInfo": "welcome food available",
+  "checkIn": 8,
+  "checkOut": 20,
+  "maxGuests": 1,
+  "pricePerNight": 100,
+  "totalRooms": 50,
+  "availableRooms": 50,
+  "createdAt": {
+    "$date": "2025-01-25T12:43:42.292Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T18:41:55.291Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6796828a22040fba2cb75822"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "hotel krishna",
+  "address": "44, rajmarg,jaipur",
+  "photos": [
+    "f9fa9d809f2ae1b6cbb1b37a153a9874.jpg"
+  ],
+  "description": "a good place for indians",
+  "amenities": [
+    "wifi",
+    "pets"
+  ],
+  "extraInfo": "welcome food available",
+  "checkIn": 8,
+  "checkOut": 20,
+  "maxGuests": 1,
+  "pricePerNight": 100,
+  "totalRooms": 10,
+  "availableRooms": 10,
+  "createdAt": {
+    "$date": "2025-01-26T18:44:26.855Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T18:44:26.855Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6796843922040fba2cb75848"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "Ocean View Hotel",
+  "address": "123 Beach Ave, Malibu, CA",
+  "photos": [
+    "6cf2e909e5040dc7abb0be175544bf69.jpg"
+  ],
+  "description": "A luxurious seaside hotel with ocean views.",
+  "amenities": [
+    "Free WiFi",
+    "Swimming Pool",
+    "Gym",
+    "wifi",
+    "parking"
+  ],
+  "extraInfo": "Breakfast included",
+  "checkIn": 14,
+  "checkOut": 11,
+  "maxGuests": 4,
+  "pricePerNight": 200,
+  "totalRooms": 50,
+  "availableRooms": 50,
+  "createdAt": {
+    "$date": "2025-01-26T18:51:37.039Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T19:26:07.398Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6796844322040fba2cb7584b"
+  },
+  "owner": {
+    "$oid": "678f7979e92a0134dfc79668"
+  },
+  "name": "Luxury Hotel",
+  "address": "123 Street, City, Country",
+  "photos": [
+    "46ad5559bd917abd81297f78a5e5aac5.jpg"
+  ],
+  "description": "A luxurious hotel with premium amenities.",
+  "amenities": [
+    "Free WiFi",
+    "Swimming Pool",
+    "Gym"
+  ],
+  "extraInfo": "Breakfast included",
+  "checkIn": 14,
+  "checkOut": 11,
+  "maxGuests": 200,
+  "pricePerNight": 150,
+  "totalRooms": 100,
+  "availableRooms": 80,
+  "createdAt": {
+    "$date": "2025-01-26T18:51:47.537Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T19:25:44.190Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679685dedc9f24c241f30bd3"
+  },
+  "owner": {
+    "$oid": "678fc8cdccead5333b039863"
+  },
+  "name": "hotel krishna",
+  "address": "48, Shyam Ganj , Mathura",
+  "photos": [
+    "649ebb5396faa3fa24187ca59b982516.jpg"
+  ],
+  "description": "a good plce for indians",
+  "amenities": [
+    "tv",
+    "entrance"
+  ],
+  "extraInfo": "welcome food available",
+  "checkIn": 8,
+  "checkOut": 20,
+  "maxGuests": 1,
+  "pricePerNight": 1000,
+  "totalRooms": 49,
+  "availableRooms": 49,
+  "createdAt": {
+    "$date": "2025-01-26T18:58:38.754Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T19:06:01.851Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67968c1ee42b6d8326bc9ab7"
+  },
+  "owner": {
+    "$oid": "678f713a24e68d3bdb699b59"
+  },
+  "name": "Hotel Sunshine ",
+  "address": "21 Beach Ave, Miami, FL",
+  "photos": [
+    "c6f673ed67711e5d3ed358db528a7d9e.jpg",
+    "photo1737919350014.jpg"
+  ],
+  "description": "An updated description for a beautiful beachside hotel.",
+  "amenities": [
+    "Wi-Fi",
+    "Pool",
+    "Gym",
+    "wifi",
+    "tv"
+  ],
+  "extraInfo": "Free breakfast included.",
+  "checkIn": 15,
+  "checkOut": 12,
+  "maxGuests": 4,
+  "pricePerNight": 2000,
+  "totalRooms": 50,
+  "availableRooms": 50,
+  "createdAt": {
+    "$date": "2025-01-26T19:25:18.919Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-26T19:25:18.919Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679736dac97bbdc8a8e75b7e"
+  },
+  "owner": {
+    "$oid": "678f7979e92a0134dfc79668"
+  },
+  "name": "Hotel Sunshine ",
+  "address": "21 Beach Ave, Miami, FL",
+  "photos": [
+    "photo1737652988961.jpg",
+    "photo1737653009370.jpg",
+    "photo1737652998922.jpg"
+  ],
+  "description": "An updated description for a beautiful beachside hotel.",
+  "amenities": [
+    "Wi-Fi",
+    "Pool",
+    "Gym"
+  ],
+  "extraInfo": "Free breakfast included.",
+  "checkIn": 15,
+  "checkOut": 12,
+  "maxGuests": 4,
+  "pricePerNight": 2000,
+  "totalRooms": 50,
+  "availableRooms": 50,
+  "createdAt": {
+    "$date": "2025-01-27T07:33:46.101Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-27T07:33:46.101Z"
+  },
+  "__v": 0
+}]
