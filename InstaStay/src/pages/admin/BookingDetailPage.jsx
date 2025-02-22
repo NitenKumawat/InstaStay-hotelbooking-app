@@ -7,6 +7,7 @@ import PlaceImg from '../../components/PlaceImg';
 
 import HotelGallery from '../../components/HotelGallery';
 
+import { API_URL } from "../../Config";
 const BookingDetailPage = () => {
   const { id } = useParams(); // Get booking ID from URL params
   const [booking, setBooking] = useState(null);
@@ -15,7 +16,7 @@ const BookingDetailPage = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:5000/api/admin/bookings/${id}`, {
+        .get(`${API_URL}/api/admin/bookings/${id}`, {
           withCredentials: true, // Ensure cookies are sent with the request
         })
         .then((response) => {

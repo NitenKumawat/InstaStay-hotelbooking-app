@@ -3,6 +3,7 @@ import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 import AdminDashboard from "../../components/navbars/AdminDashboard";
 
+import { API_URL } from "../../Config";
 const UsersPage = () => {
   const { user } = useContext(AuthContext);
   const [users, setUsers] = useState([]);
@@ -24,7 +25,7 @@ const UsersPage = () => {
 
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/admin/users", {
+        const response = await axios.get(`${API_URL}/api/admin/users`, {
           withCredentials: true,
         });
         setUsers(response.data);
@@ -54,7 +55,7 @@ const UsersPage = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/users",
+        `${API_URL}/api/admin/users`,
         newUser,
         { withCredentials: true }
       );
@@ -84,7 +85,7 @@ const UsersPage = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/admin/users/${editUser._id}`,
+        `${API_URL}/api/admin/users/${editUser._id}`,
         userToUpdate,
         { withCredentials: true }
       );
@@ -102,7 +103,7 @@ const UsersPage = () => {
 
   const handleDeleteUser = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/users/${id}`, {
+      await axios.delete(`${API_URL}/api/admin/users/${id}`, {
         withCredentials: true,
       });
 
@@ -131,7 +132,7 @@ const UsersPage = () => {
   const fetchUsers = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:5000/api/admin/users", {
+      const response = await axios.get(`${API_URL}/api/admin/users`, {
         withCredentials: true,
       });
       setUsers(response.data);

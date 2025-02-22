@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { AuthContext } from "../../context/AuthContext"; // Import AuthContext for authentication
 
+
 export default function LoginPage() {
   const [formData, setFormData] = useState({
     email: "",

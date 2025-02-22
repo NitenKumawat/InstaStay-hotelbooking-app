@@ -9,6 +9,9 @@ import { AuthContext } from '../../context/AuthContext';
 import HotelGallery from '../../components/HotelGallery';
 import { FaBed, FaUsers, FaClipboardList, FaRegClock } from 'react-icons/fa'; // Importing modern icons
 import { BsDoorOpenFill } from "react-icons/bs";
+
+
+import { API_URL } from "../../Config";
 const MyBookingDetail = () => {
   const { id } = useParams(); // Get booking ID from URL params
   const { user } = useContext(AuthContext); // Get user from context
@@ -17,7 +20,7 @@ const MyBookingDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:5000/api/bookings/${id}`, {
+        .get(`${API_URL}/api/bookings/${id}`, {
           withCredentials: true, // Ensure cookies are sent with the request
         })
         .then((response) => {

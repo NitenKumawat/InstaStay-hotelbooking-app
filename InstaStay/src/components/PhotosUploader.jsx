@@ -2,6 +2,9 @@ import axios from "axios";
 import { useState } from "react";
 import Image from "./Image.jsx";
 
+import { API_URL } from "../Config";
+
+
 export default function PhotosUploader({ addedPhotos = [], onChange }) {
   const [photoLink, setPhotoLink] = useState("");
 
@@ -14,7 +17,7 @@ export default function PhotosUploader({ addedPhotos = [], onChange }) {
 
     try {
       const { data: filename } = await axios.post(
-        "http://localhost:5000/api/upload-by-link/",
+       `${API_URL}/api/upload-by-link/`,
         { link: photoLink }
       );
       const updatedPhotos = [...addedPhotos, filename];
@@ -34,7 +37,7 @@ export default function PhotosUploader({ addedPhotos = [], onChange }) {
     }
 
     axios
-      .post("http://localhost:5000/api/upload/", data, {
+      .post(`${API_URL}/api/upload/`, data, {
         headers: { "Content-type": "multipart/form-data" },
       })
       .then((response) => {

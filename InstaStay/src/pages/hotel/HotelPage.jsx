@@ -5,6 +5,8 @@ import axios from "axios";
 import BookingWidget from "../../components/BookingWidget";
 import HotelGallery from "../../components/HotelGallery";
 import AddressLink from "../../components/AddressLink";
+
+import { API_URL } from "../../Config";
 const HotelPage = () => {
     const {id} = useParams();
     const [hotel, setHotel] = useState(null);
@@ -13,7 +15,7 @@ const HotelPage = () => {
         if (!id) {
           return;
         }
-        axios.get(`http://localhost:5000/api/hotels/${id}`).then(response => {
+        axios.get(`${API_URL}/api/hotels/${id}`).then(response => {
           setHotel(response.data);
         });
       }, [id]);

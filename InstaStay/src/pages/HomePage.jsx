@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Image from '../components/Image'; // Assuming this is your image wrapper component
 
+import { API_URL } from "../Config";
 const HomePage = () => {
   const { searchTerm } = useSearch(); // Get searchTerm from context
   const [hotels, setHotels] = useState([]);
@@ -13,7 +14,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/hotels');
+        const response = await fetch(`${API_URL}/api/hotels`);
         const data = await response.json();
         setHotels(data);
         setFilteredHotels(data); // Initialize filteredHotels with all hotels

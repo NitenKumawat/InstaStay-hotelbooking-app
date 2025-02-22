@@ -6,6 +6,8 @@ import { Navigate, useParams } from "react-router-dom";
 import AccountNav from "../../components/navbars/AccountNav.jsx";
 import { AuthContext } from "../../context/AuthContext.jsx";
 
+
+import { API_URL } from "../../Config";
 export default function HotelFormPage() {
   const { id } = useParams();
   const { user } = useContext(AuthContext); // Get user from context
@@ -33,7 +35,7 @@ export default function HotelFormPage() {
 
     const fetchHotel = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5000/api/hotels/${id}`, {
+        const { data } = await axios.get(`${API_URL}/api/hotels/${id}`, {
           withCredentials: true, // Include credentials
         });
         setFormData(data);
@@ -73,12 +75,12 @@ export default function HotelFormPage() {
     try {
       if (id) {
         // Update existing hotel
-        await axios.put(`http://localhost:5000/api/hotels/${id}`, formData, {
+        await axios.put(`${API_URL}/api/hotels/${id}`, formData, {
           withCredentials: true, // Include credentials
         });
       } else {
         // Create new hotel
-        await axios.post('http://localhost:5000/api/hotels', formData, {
+        await axios.post(`${API_URL}/api/hotels`, formData, {
           withCredentials: true, // Include credentials
         });
       }

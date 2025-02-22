@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+
+import { API_URL } from "../../Config";
 export default function SignupPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -27,7 +29,7 @@ export default function SignupPage() {
     setError("");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        `${API_URL}/api/auth/signup`,
         formData
       );
       setSuccessMessage(response.data.message);

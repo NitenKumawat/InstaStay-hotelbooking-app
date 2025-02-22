@@ -6,12 +6,13 @@ import PlaceImg from '../../components/PlaceImg';
 import BookingDates from '../../components/BookingDates';
 import { format } from 'date-fns';
 
+import { API_URL } from "../../Config";
 const MyBookingsPage = () => {
   const [bookings, setBookings] = useState([]);
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/bookings/user-bookings/', {
+      .get(`${API_URL}/api/bookings/user-bookings/`, {
         withCredentials: true, // Ensure cookies are sent with the request
       })
       .then((response) => {

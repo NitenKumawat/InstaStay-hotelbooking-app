@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PlaceImg from '../../components/PlaceImg';
 import AdminDashboard from '../../components/navbars/AdminDashboard';
 
+import { API_URL } from "../../Config";
 const BookingsPage = () => {
   const [bookings, setBookings] = useState([]);
   const [filteredBookings, setFilteredBookings] = useState([]);
@@ -14,7 +15,7 @@ const BookingsPage = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/admin/bookings', {
+        const response = await axios.get(`${API_URL}/api/admin/bookings`, {
           withCredentials: true, // Ensure cookies are sent with the request
         });
         setBookings(response.data);
@@ -47,7 +48,7 @@ const BookingsPage = () => {
 
   const handleDeleteBooking = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/bookings/${id}`, {
+      await axios.delete(`${API_URL}/api/admin/bookings/${id}`, {
         withCredentials: true,
       });
       setBookings((prevBookings) => prevBookings.filter((booking) => booking._id !== id));

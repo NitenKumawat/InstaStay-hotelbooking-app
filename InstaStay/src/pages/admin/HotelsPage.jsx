@@ -6,6 +6,7 @@ import PhotosUploader from "../../components/PhotosUploader";
 import Perks from "../../components/Perks";
 import AdminDashboard from "../../components/navbars/AdminDashboard";
 
+import { API_URL } from "../../Config";
 const HotelsPage = () => {
   const { user } = useContext(AuthContext);
   const [hotels, setHotels] = useState([]);
@@ -36,7 +37,7 @@ const HotelsPage = () => {
     if (!user || !user.isAdmin) return;
     const fetchHotels = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/admin/hotels", {
+        const response = await axios.get(`${API_URL}/api/admin/hotels`, {
           withCredentials: true,
         });
         setHotels(response.data);
@@ -69,7 +70,7 @@ const HotelsPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/admin/hotels",
+        `${API_URL}/api/admin/hotels`,
         formData,
         { withCredentials: true }
       );
@@ -104,7 +105,7 @@ const HotelsPage = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/admin/hotels/${editHotel._id}`,
+       `${API_URL}/api/admin/hotels/${editHotel._id}`,
         formData,
         { withCredentials: true }
       );
@@ -121,7 +122,7 @@ const HotelsPage = () => {
 
   const handleDeleteHotel = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/hotels/${id}`, {
+      await axios.delete(`${API_URL}/api/admin/hotels/${id}`, {
         withCredentials: true,
       });
       setHotels((prevHotels) => prevHotels.filter((hotel) => hotel._id !== id));

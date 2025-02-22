@@ -4,6 +4,9 @@ import axios from "axios";
 import { Navigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
+
+import { API_URL } from "../Config";
+
 export default function BookingWidget({ hotel }) {
   const { user } = useContext(AuthContext); // Get user from context
   const [formData, setFormData] = useState({
@@ -57,7 +60,7 @@ export default function BookingWidget({ hotel }) {
     try {
       const totalPrice = numberOfNights * hotel.pricePerNight * formData.numberOfRooms;
   
-      const response = await axios.post('http://localhost:5000/api/bookings', {
+      const response = await axios.post(`${API_URL}/api/bookings`, {
         ...formData,
         hotelId: hotel._id,
         totalPrice,
