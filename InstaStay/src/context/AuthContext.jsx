@@ -33,10 +33,11 @@ export const AuthProvider = ({ children }) => {
       await axios.post(
         `${API_URL}/api/auth/login`,
         { email, password },
-        { withCredentials: true }
+        { withCredentials: true } // ✅ Ensure cookies are sent
       );
+  
       const response = await axios.get(`${API_URL}/api/auth/me`, {
-        withCredentials: true, // ✅ Required to send cookies
+        withCredentials: true, // ✅ Fetch user after login
       });
       setUser(response.data);
     } catch (error) {
