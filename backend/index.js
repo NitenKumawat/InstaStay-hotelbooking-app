@@ -17,8 +17,8 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://insta-stay-hotelbooking-app.vercel.app"], // ✅ Allow local & Vercel frontend
-    credentials: true, // ✅ Allow sending cookies
+    origin: "https://insta-stay-hotelbooking-app.vercel.app", // ✅ Your frontend URL
+    credentials: true, // ✅ Allow cookies
   })
 );
 
