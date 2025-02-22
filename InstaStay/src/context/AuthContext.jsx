@@ -13,8 +13,9 @@ export const AuthProvider = ({ children }) => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(`${API_URL}/api/auth/me`, {
-          withCredentials: true,
+          withCredentials: true, // ✅ Required to send cookies
         });
+        
         setUser(response.data);
       } catch (error) {
         console.error("Failed to fetch user data:", error);
@@ -35,7 +36,7 @@ export const AuthProvider = ({ children }) => {
         { withCredentials: true }
       );
       const response = await axios.get(`${API_URL}/api/auth/me`, {
-        withCredentials: true,
+        withCredentials: true, // ✅ Required to send cookies
       });
       setUser(response.data);
     } catch (error) {
