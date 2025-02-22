@@ -101,10 +101,11 @@ exports.login = async (req, res) => {
 
 res.cookie("auth_token", token, {
   httpOnly: true,
-  secure: true, // ✅ Required for HTTPS
-  sameSite: "None", // ✅ Required for cross-origin requests
+  secure: process.env.NODE_ENV === "production", // ✅ Secure cookies only in production
+  sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax", // ✅ "None" required for cross-origin cookies
   maxAge: 60 * 60 * 1000, // ✅ 1 hour
 });
+
 
 
   
