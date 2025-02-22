@@ -17,7 +17,7 @@ dotenv.config();
 const allowedOrigins = [
   "http://localhost:5173",  // Development (Vite)
   "http://localhost:5174",  // Development (Vite)
-  "https://insta-stay-hotelbooking-app.vercel.app/" // Production (Vercel)
+  "https://insta-stay-hotelbooking-app.vercel.app" // Production (Vercel)
 ];
 
 
