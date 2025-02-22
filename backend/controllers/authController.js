@@ -100,9 +100,9 @@ exports.login = async (req, res) => {
 // });
 
 res.cookie("auth_token", token, {
-  httpOnly: true, 
-  secure: false, // ❌ Set to false for local development
-  sameSite: "Lax", // ✅ "None" only works with HTTPS, use "Lax" locally
+  httpOnly: true,
+  secure: true, // ✅ Required for HTTPS
+  sameSite: "None", // ✅ Required for cross-origin requests
   maxAge: 60 * 60 * 1000, // ✅ 1 hour
 });
 
@@ -122,22 +122,27 @@ res.cookie("auth_token", token, {
   
 };
 
-
-
-// In your backend (authController.js)
 exports.getUserDetails = async (req, res) => {
-    try {
-        const user = req.user; // User details already fetched by middleware
-        res.status(200).json({
-            id: user._id,
-            name: user.name,
-            email: user.email,
-            isAdmin: user.isAdmin,
-        });
-    } catch (error) {
-        res.status(500).json({ error: "Failed to fetch user details." });
-    }
+  console.log("Cookies received in request:", req.cookies);
+
+  try {
+      if (!req.cookies.auth_token) {
+          return res.status(401).json({ error: "Unauthorized, no token found" });
+      }
+
+      const decoded = jwt.verify(req.cookies.auth_token, process.env.JWT_SECRET);
+      const user = await User.findById(decoded.id).select("-password");
+      
+      if (!user) return res.status(404).json({ error: "User not found" });
+
+      res.status(200).json(user);
+  } catch (error) {
+      res.status(500).json({ error: "Failed to fetch user details." });
+  }
 };
+
+
+
 
   exports.logout = (req, res) => {
     res.clearCookie("auth_token", {

@@ -12,9 +12,8 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`${API_URL}/api/auth/me`, {
-          withCredentials: true, // ✅ Required to send cookies
-        });
+        const response = await axios.get(`${API_URL}/api/auth/me`, { withCredentials: true });
+
         
         setUser(response.data);
       } catch (error) {
