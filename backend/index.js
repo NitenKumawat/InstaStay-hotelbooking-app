@@ -20,6 +20,14 @@ const allowedOrigins = [
   "https://insta-stay-hotelbooking-app.vercel.app" // Production (Vercel)
 ];
 
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allow all required methods
+    allowedHeaders: ["Content-Type", "Authorization"], // Allow necessary headers
+  })
+);
 
 // Middleware
 app.use(express.json()); // Parse JSON request body
@@ -27,16 +35,6 @@ app.use(cookieParser()); // To read cookies sent by the client
 
 
 
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
-}));
 
 // Import routes
 const authRoutes = require("./routes/authRoutes");
