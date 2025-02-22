@@ -12,34 +12,21 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get(`${API_URL}/api/auth/me`, { withCredentials: true });
+        const response = await axios.get(`${API_URL}/api/auth/me`, {
+          withCredentials: true, // ✅ Required to send cookies
+        });
+        
         setUser(response.data);
       } catch (error) {
         console.error("Failed to fetch user data:", error);
         setUser(null);
+      } finally {
+        setLoading(false); // Set loading to false after fetching data
       }
     };
-    
+
     fetchUser();
   }, []);
-  // useEffect(() => {
-  //   const fetchUser = async () => {
-  //     try {
-  //       const response = await axios.get(`${API_URL}/api/auth/me`, {
-  //         withCredentials: true, // ✅ Required to send cookies
-  //       });
-        
-  //       setUser(response.data);
-  //     } catch (error) {
-  //       console.error("Failed to fetch user data:", error);
-  //       setUser(null);
-  //     } finally {
-  //       setLoading(false); // Set loading to false after fetching data
-  //     }
-  //   };
-
-  //   fetchUser();
-  // }, []);
 
   const login = async (email, password) => {
     try {
