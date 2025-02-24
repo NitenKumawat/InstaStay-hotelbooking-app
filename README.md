@@ -1,6 +1,6 @@
 # InstaStay Hotel Booking App 🏨✨
 
-![InstaStay Banner](https://your-image-link.com)
+
 
 ## 🚀 Overview
 InstaStay is a modern **hotel booking application** built using the **MERN stack**. It provides users with a seamless experience to search, book, and manage hotel stays, while offering admins control over hotel listings and bookings.
@@ -24,16 +24,12 @@ InstaStay is a modern **hotel booking application** built using the **MERN stack
 - **State Management:** Context API
 - **Deployment:** Render (Backend), Vercel (Frontend)
 
-## 🖼 Screenshots
-![Homepage](https://your-image-link.com)
-![Hotel Details](https://your-image-link.com)
-![Booking Page](https://your-image-link.com)
-![Admin Dashboard](https://your-image-link.com)
+
 
 ## 🏢 Admin Features
 - ✅ **Manage Hotels** (Add, Update, Delete)
 - ✅ **Manage Users** (View and Delete Users)
-- ✅ **Manage Bookings** (View All Reservations, and Delete)
+- ✅ **Manage Bookings** (View All Reservations)
 - ✅ **Dashboard Overview with Analytics**
 - ✅ **Approve or Reject Bookings**
 - ✅ **Manage Hotel Amenities & Policies**
@@ -61,12 +57,12 @@ npm run dev
 
 
 ## 📉 Live Demo
-[🔗 InstaStay Live](https://your-live-demo-link.com)
+[🔗 InstaStay Live](https://insta-stay-hotelbooking-app.vercel.app/)
 
 ## 🐝 License
 This project is **open-source** and available under the [MIT License](LICENSE).
 
 ## 🤝 Connect with Me
-💎 Email: your-email@example.com  
+💎 Email: nitenkumawat@gmail.com 
 🌟 LinkedIn: [Niten Kumawat](https://www.linkedin.com/in/nitenkumawat)  
 🐝 GitHub: [nitenkumawat](https://github.com/nitenkumawat)
